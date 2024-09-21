@@ -4,15 +4,17 @@ from loguru import logger
 from quixstreams import Application
 
 from src.kraken_api import KrakenWebsocketTradeAPI
+from src import config
 
 
-def produce_trades(kafka_broker_address: str, kafka_topic_name: str) -> None:
+def produce_trades(kafka_broker_address: str, kafka_topic_name: str, product_id: str) -> None:
     """
     Reads trades from the Kraken websocket API, and saves into Kafka topic.
 
     Args:
         Kafka_broker_address (str): The address of the Kafka broker.
         Kafka_topic (str): The name of the Kafka topic.
+        product_id (str): Trade ID
 
     Returns:
         None
@@ -24,7 +26,7 @@ def produce_trades(kafka_broker_address: str, kafka_topic_name: str) -> None:
     topic = app.topic(name=kafka_topic_name, value_serializer='json')
 
     # Create instance of Kraken API
-    kraken_api = KrakenWebsocketTradeAPI(product_id='BTC/USD')
+    kraken_api = KrakenWebsocketTradeAPI(product_id=product_id)
 
     logger.info('Creating producer..')
 
@@ -49,4 +51,4 @@ def produce_trades(kafka_broker_address: str, kafka_topic_name: str) -> None:
 
 
 if __name__ == '__main__':
-    produce_trades(kafka_broker_address='redpanda-0:9092', kafka_topic_name='trade')
+    produce_trades(kafka_broker_address=config.kafka_broker_address, kafka_topic_name=config.kafka_topic_name, product_id=config.product_id)

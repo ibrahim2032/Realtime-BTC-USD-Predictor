@@ -1,5 +1,8 @@
 FROM python:3.11-slim-bookworm
 
+# add /app/src to PYTHONPATH
+ENV PYTHONPATH=/app
+
 # Stream output to console
 ENV PYTHONUNBUFFERED=1
 
