@@ -1,7 +1,7 @@
 FROM python:3.11-slim-bookworm
 
 # add /app/src to PYTHONPATH
-ENV PYTHONPATH=/app
+ENV PYTHONPATH "${PYTHONPATH}:/app/src"
 
 # Stream output to console
 ENV PYTHONUNBUFFERED=1
