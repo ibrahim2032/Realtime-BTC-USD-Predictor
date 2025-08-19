@@ -1,0 +1,4 @@
+export KAFKA_TOPIC=trade
+export PRODUCT_IDS='["BTC/USD", "BTC/GBP", "BTC/EUR"]'
+# export PRODUCT_IDS='["BTC/USD","ETH/USD","XRP/USD","BTC/GBP","ETH/GBP","XRP/GBP","BTC/EUR","ETH/EUR","XRP/EUR"]'
+export LIVE_OR_HISTORICAL=live

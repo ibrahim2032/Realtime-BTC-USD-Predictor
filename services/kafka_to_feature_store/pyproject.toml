@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = ""
+authors = ["Ibrahim Oshinubi <ibrahim.oshinubi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+quixstreams = "^3.9.0"
+dotenv = "^0.9.9"
+loguru = "^0.7.3"
+pydantic-settings = "^2.6"
+hopsworks = "^4.2.0"
+pyarrow = "^19.0.1"
+charset-normalizer = "^3.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
