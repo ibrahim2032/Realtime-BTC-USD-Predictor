@@ -49,22 +49,22 @@ class FeatureEngineeringPipeline(BaseEstimator, TransformerMixin):
             - n_candles_into_future: int: the number of candles into the future to predict
 
             # momentum indicators
-            - RSI_timeperiod: Optional[int]: the time period for the RSI indicator
-            - MOM_timeperiod: Optional[int]: the time period for the momentum indicator
-            - MACD_fastperiod: Optional[int]: the fast period for the MACD indicator
-            - MACD_slowperiod: Optional[int]: the slow period for the MACD indicator
-            - MACD_signalperiod: Optional[int]: the signal period for the MACD indicator
-            - MFI_timeperiod: Optional[int]: the time period for the MFI indicator
-            - ADX_timeperiod: Optional[int]: the time period for the ADX indicator
-            - ROC_timeperiod: Optional[int]: the time period for the ROC indicator
-            - STOCH_fastk_period: Optional[int]: the fastk period for the STOCH indicator
-            - STOCH_slowk_period: Optional[int]: the slowk period for the STOCH indicator
-            - STOCH_slowk_matype: Optional[int]: the matype for the STOCH indicator
-            - STOCH_slowd_period: Optional[int]: the slowd period for the STOCH indicator
-            - STOCH_slowd_matype: Optional[int]: the matype for the STOCH indicator
-            - ULTOSC_timeperiod1: Optional[int]: the time period for the ULTOSC indicator
-            - ULTOSC_timeperiod2: Optional[int]: the time period for the ULTOSC indicator
-            - ULTOSC_timeperiod3: Optional[int]: the time period for the ULTOSC indicator
+            - RSI_timeperiod: Optional[int]: the time period for the RSI indicator.
+            - MOM_timeperiod: Optional[int]: the time period for the momentum indicator.
+            - MACD_fastperiod: Optional[int]: the fast period for the MACD indicator.
+            - MACD_slowperiod: Optional[int]: the slow period for the MACD indicator.
+            - MACD_signalperiod: Optional[int]: the signal period for the MACD indicator.
+            - MFI_timeperiod: Optional[int]: the time period for the MFI indicator.
+            - ADX_timeperiod: Optional[int]: the time period for the ADX indicator.
+            - ROC_timeperiod: Optional[int]: the time period for the ROC indicator.
+            - STOCH_fastk_period: Optional[int]: the fastk period for the STOCH indicator.
+            - STOCH_slowk_period: Optional[int]: the slowk period for the STOCH indicator.
+            - STOCH_slowk_matype: Optional[int]: the matype for the STOCH indicator.
+            - STOCH_slowd_period: Optional[int]: the slowd period for the STOCH indicator.
+            - STOCH_slowd_matype: Optional[int]: the matype for the STOCH indicator.
+            - ULTOSC_timeperiod1: Optional[int]: the time period for the ULTOSC indicator.
+            - ULTOSC_timeperiod2: Optional[int]: the time period for the ULTOSC indicator.
+            - ULTOSC_timeperiod3: Optional[int]: the time period for the ULTOSC indicator.
 
             # statistic indicators
             - STDDEV_timeperiod: Optional[int]: the time period for the STDDEV indicator
