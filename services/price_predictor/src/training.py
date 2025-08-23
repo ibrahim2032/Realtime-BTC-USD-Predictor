@@ -27,11 +27,11 @@ def train(
     """
     This function trains the model by following these steps
 
-    1. Fetch OHLC data from the feature store
-    2. Split the data into training and testing
+    1. Fetch OHLC data from the feature store.
+    2. Split the data into training and testing.
     3. Preprocess the data. In this case, missing value imputation.
     4. Create the target metric as a new column in our dataframe. This is what to predict.
-    5. Train the model
+    5. Train the model.
 
     Args:
         feature_view_name (str): The name of the feature view in the feature store.
