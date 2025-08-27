@@ -44,7 +44,7 @@ def train(
         hyper_param_search_trials (int): The number of hyperparameter search trials.
 
     Returns:
-        Nothing.
+        Nothing
         The model artifact is pushed to the model registry.
     """
     # Create an experiment to log metadata to CometML
