@@ -40,12 +40,12 @@ def train(
         product_id (str): The product id.
         last_n_days_to_fetch_from_store (int): The number of days to fetch from the feature store.
         last_n_days_to_test_model (int): The number of days to use for testing the model.
-        prediction_window_sec (int): The size of the prediction window in seconds..
+        prediction_window_sec (int): The size of the prediction window in seconds.
         hyper_param_search_trials (int): The number of hyperparameter search trials.
 
     Returns:
         Nothing.
-        The model artifact is pushed to the model registry..
+        The model artifact is pushed to the model registry.
     """
     # Create an experiment to log metadata to CometML
     experiment = Experiment(
