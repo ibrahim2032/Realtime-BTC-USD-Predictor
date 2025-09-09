@@ -36,7 +36,7 @@ def train(
     Args:
         feature_view_name (str): The name of the feature view in the feature store.
         feature_view_version (int): The version of the feature view in the feature store.
-        ohlc_window_sec (int): The size of the window in seconds..
+        ohlc_window_sec (int): The size of the window in seconds.
         product_id (str): The product id.
         last_n_days_to_fetch_from_store (int): The number of days to fetch from the feature store.
         last_n_days_to_test_model (int): The number of days to use for testing the model.
