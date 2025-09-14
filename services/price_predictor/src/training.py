@@ -45,7 +45,7 @@ def train(
 
     Returns:
         Nothing.
-        The model artifact is pushed to the model registry..
+        The model artifact is pushed to the model registry.
     """
     # Create an experiment to log metadata to CometML
     experiment = Experiment(
