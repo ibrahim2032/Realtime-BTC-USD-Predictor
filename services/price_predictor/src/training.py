@@ -25,7 +25,7 @@ def train(
     hyper_param_search_trials: Optional[int] = 0,
 ):
     """
-    This function trains the model by following these steps..
+    This function trains the model by following these steps.
 
     1. Fetch OHLC data from the feature store.
     2. Split the data into training and testing.
